@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="8cJ-kU-5Ig">
+                                <rect key="frame" x="0.0" y="192" width="600" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="CZc-cv-inR"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="490043198.65013999">
+                                    <!--2016-07-12 19:06:38 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="changeDateValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="jce-0X-2OQ"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find next lottery day from date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHk-RG-awF">
+                                <rect key="frame" x="193" y="166" width="215" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="aD0-JD-Dut"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.19236747382198949" green="0.19236747382198949" blue="0.19236747382198949" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCI-SQ-lt4">
+                                <rect key="frame" x="164" y="454" width="0.0" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="lEj-4E-OT5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next lottery day:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2U-PD-pWh">
+                                <rect key="frame" x="30" y="454" width="126" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="AWZ-7f-4S4"/>
+                                    <constraint firstAttribute="width" constant="126" id="yBN-gF-Pny"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BrightDay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Li4-7J-Gq8">
+                                <rect key="frame" x="241" y="27" width="119" height="45"/>
+                                <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="27"/>
+                                <color key="textColor" red="0.57159127086002814" green="0.64768079188481675" blue="0.35546911740453929" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YCI-SQ-lt4" firstAttribute="leading" secondItem="O2U-PD-pWh" secondAttribute="trailing" constant="8" id="3Mp-eE-KBI"/>
+                            <constraint firstItem="Li4-7J-Gq8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Fz-Sw-CGW"/>
+                            <constraint firstItem="8cJ-kU-5Ig" firstAttribute="top" secondItem="xHk-RG-awF" secondAttribute="bottom" constant="8" id="934-Z3-15B"/>
+                            <constraint firstItem="O2U-PD-pWh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="BLU-6A-54j"/>
+                            <constraint firstItem="8cJ-kU-5Ig" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rsp-3Q-YEo"/>
+                            <constraint firstItem="YCI-SQ-lt4" firstAttribute="top" secondItem="8cJ-kU-5Ig" secondAttribute="bottom" constant="46" id="TGU-7G-dCX"/>
+                            <constraint firstItem="O2U-PD-pWh" firstAttribute="top" secondItem="8cJ-kU-5Ig" secondAttribute="bottom" constant="46" id="Tlt-qH-D7j"/>
+                            <constraint firstItem="Li4-7J-Gq8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-251" id="afu-yf-VL7"/>
+                            <constraint firstItem="8cJ-kU-5Ig" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="cNP-QD-pho"/>
+                            <constraint firstItem="xHk-RG-awF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sqM-Bx-QnO"/>
+                            <constraint firstItem="8cJ-kU-5Ig" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="u94-gf-xpH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelDate" destination="YCI-SQ-lt4" id="jSm-Tl-Uyx"/>
+                        <outlet property="pickerDate" destination="8cJ-kU-5Ig" id="Fop-60-dlx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
